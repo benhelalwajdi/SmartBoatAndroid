@@ -10,7 +10,7 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         /*var text = findViewById(R.id.txt)as TextView
-
         text.setText(intent.getStringExtra("name"))*/
+
     }
 }
