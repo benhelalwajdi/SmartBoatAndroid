@@ -46,7 +46,7 @@ class LoginActivity : AppCompatActivity() {
             //print in console log the email
             Log.d("password", password?.text.toString())
             if((email!= null)&&(password!= null)){
-                val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
+                val intent = Intent(this@LoginActivity, MainActivity::class.java)
                 startActivity(intent)
                 finish()
             }else{
