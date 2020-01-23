@@ -1,10 +1,16 @@
 package com.wbh.test
 
 import android.content.Intent
+import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
+import androidx.constraintlayout.widget.Constraints
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,6 +31,27 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }*/
 
+        val parent : androidx.constraintlayout.widget.ConstraintLayout = findViewById(R.id.parent_layout)
+        val animation: AnimationDrawable? = parent.background as AnimationDrawable?
 
+        // 3 sec for the pic for display
+        animation?.setEnterFadeDuration(3000)
+        // 3 sec for the pic for changed
+        animation?.setExitFadeDuration(1000)
+        // start the animation
+        animation?.start()
+
+        val ImageView:ImageView = findViewById(R.id.imageView2)
+        val Button:Button = findViewById(R.id.animation)
+        val Button2:Button = findViewById(R.id.animation2)
+
+        Button.setOnClickListener {
+            val animation2: Animation? = AnimationUtils.loadAnimation(this@MainActivity,R.anim.scale)
+            ImageView.startAnimation(animation2)
+        }
+
+        Button2.setOnClickListener {
+
+        }
     }
 }
