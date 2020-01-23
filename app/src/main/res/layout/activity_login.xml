@@ -7,7 +7,7 @@
     tools:context=".LoginActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/animation"
         android:layout_width="324dp"
         android:layout_height="231dp"
         android:layout_marginBottom="500dp"
