@@ -4,4 +4,5 @@
     <string name="username_exemple">username Exemple</string>
     <string name="password_exemple">password Exemple</string>
     <string name="login">Login</string>
+    <string name="password">Password</string>
 </resources>
