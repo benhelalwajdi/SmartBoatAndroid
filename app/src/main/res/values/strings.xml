@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Test</string>
     <string name="todo">TODO</string>
+    <string name="username_exemple">username Exemple</string>
+    <string name="password_exemple">password Exemple</string>
+    <string name="login">Login</string>
 </resources>
