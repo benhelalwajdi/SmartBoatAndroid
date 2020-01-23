@@ -28,13 +28,10 @@ class LoginActivity : AppCompatActivity() {
         // dec the password text field
         var password:EditText? = findViewById(R.id.password)
 
-
         //print in console log the email
         Log.d("Email", email?.text.toString())
-
         //print in console log the email
         Log.d("password", password?.text.toString())
-
 
         // 3 sec for the pic for display
         animation?.setEnterFadeDuration(3000)
@@ -42,5 +39,6 @@ class LoginActivity : AppCompatActivity() {
         animation?.setExitFadeDuration(1000)
         // start the animation
         animation?.start()
+
     }
 }
