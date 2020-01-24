@@ -31,7 +31,6 @@ class SplashScreenActivity : AppCompatActivity() {
     //the thread runnable
     internal val mRunnable: Runnable = Runnable {
         if (!isFinishing) {
-
             val intent = Intent(this@SplashScreenActivity, LoginActivity::class.java)
             startActivity(intent)
             finish()
