@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
@@ -38,6 +39,22 @@ class LoginActivity : AppCompatActivity() {
         animation?.setExitFadeDuration(1000)
         // start the animation
         animation?.start()
+
+
+        val Button:Button = findViewById(R.id.animation3)
+        val Button2:Button = findViewById(R.id.animation2)
+
+        Button.setOnClickListener {
+            val animation2: Animation? = AnimationUtils.loadAnimation(this@LoginActivity,R.anim.scale)
+            myImage.startAnimation(animation2)
+        }
+
+        Button2.setOnClickListener {
+            val animation2: Animation? = AnimationUtils.loadAnimation(this@LoginActivity,R.anim.alpha)
+            myImage.startAnimation(animation2)
+
+        }
+
 
         // Event click button
         btn.setOnClickListener {
