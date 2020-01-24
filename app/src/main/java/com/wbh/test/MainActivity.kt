@@ -41,17 +41,6 @@ class MainActivity : AppCompatActivity() {
         // start the animation
         animation?.start()
 
-        val ImageView:ImageView = findViewById(R.id.imageView2)
-        val Button:Button = findViewById(R.id.animation)
-        val Button2:Button = findViewById(R.id.animation2)
 
-        Button.setOnClickListener {
-            val animation2: Animation? = AnimationUtils.loadAnimation(this@MainActivity,R.anim.scale)
-            ImageView.startAnimation(animation2)
-        }
-
-        Button2.setOnClickListener {
-
-        }
     }
 }
