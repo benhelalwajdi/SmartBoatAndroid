@@ -41,6 +41,8 @@ class MainActivity : AppCompatActivity() {
         // start the animation
         animation?.start()
 
+        //prepare the boat list todo
+        /* TODO */
 
     }
 }
