@@ -24,20 +24,20 @@
                     android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="xdzqdqdxz" />
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="waazswdz" />
 
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    tools:srcCompat="@tools:sample/backgrounds/scenic[22]"
-                    android:contentDescription="dqxdz" />
+                    tools:src="@drawable/animation"
+                    android:contentDescription="@string/dqxdz" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </RelativeLayout>
